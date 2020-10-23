@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/09oxcrj4uh5b2rm0?svg=true)](https://ci.appveyor.com/project/AndreyKorolevich/serviceworker-homework2-front)
+- deployment: <a href="https://andreykorolevich.github.io/serviceworker-homework2-front/">Github Pages</a>
 ### Buggy Service
 
 #### Легенда
