@@ -12,7 +12,7 @@ export default class Widget {
       this.container.innerHTML = '';
       this.data.news.forEach((e) => this.addNews(e));
     } catch (e) {
-      console.error(e);
+      this.showModal();
     }
   }
 
@@ -51,5 +51,13 @@ export default class Widget {
     } catch (e) {
       console.error(e);
     }
+  }
+
+  showModal() {
+    document.querySelector('.module').classList.remove('hidden');
+  }
+
+  hiddenModal() {
+    document.querySelector('.module').classList.add('hidden');
   }
 }

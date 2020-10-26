@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const APP_DIR = path.resolve(__dirname, './src');
+
 module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -27,6 +29,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        include: `${APP_DIR}/js`,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
